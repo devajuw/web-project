@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism ⛱️</title>
+    <style>
+      body {
+        background-color: mistyrose;
+      }
+
+      /* Style for the container div */
+      .paragraph {
+        background-color: hotpink;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: justify;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center; font-family: Lato">
+        <u> HERITAGE OF TOKYO </u>
+      </h1>
+    </header>
+    <div class="paragraph">
+      <p id="typing"></p>
+    </div>
+    <script>
+      const text =
+        "Tokyo, Japan's vibrant capital, boasts a rich cultural heritage that seamlessly blends tradition with modernity. Steeped in history, the city is dotted with iconic landmarks such as the historic Senso-ji Temple in Asakusa and the serene Meiji Shrine nestled within bustling urban landscapes. Tokyo's culinary scene is a testament to its diverse heritage, offering a tantalizing array of traditional Japanese dishes alongside innovative culinary creations. The city's traditional arts, including tea ceremony, calligraphy, and kabuki theater, are celebrated as integral parts of its cultural identity. From the tranquil gardens of the Imperial Palace to the neon-lit streets of Shinjuku, Tokyo's heritage is a captivating fusion of ancient customs and contemporary dynamism, inviting visitors to explore its multifaceted allure. ";
+
+      // Set up typing effect
+      var index = 0;
+      var speed = 48; // Typing speed in milliseconds
+
+      function typeWriter() {
+        if (index < text.length) {
+          document.getElementById("typing").innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      // Start typing effect when the page loads
+      window.onload = function () {
+        typeWriter();
+      };
+    </script>
+  </body>
+</html>
