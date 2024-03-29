@@ -1,72 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tourism ⛱️</title>
-    <style>
-      body {
-        background-color: mistyrose;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourism ⛱️</title>
+  <style>
+    body {
+      background-color: mistyrose;
+    }
+  </style>
+</head>
+
+<body style="overflow: hidden">
+
+  <h1 style="text-align: center; font-family: Lato">
+    <u> TOKYO TOURISM </u>
+  </h1>
+  <!-- Scroll -->
+  <marquee behavior="scroll" direction="right" scrollamount="11">
+    WELCOME TO TOKYO TOURISM !! ☔💗
+  </marquee>
+
+  <!-- STYLING -->
+  <style>
+    .zoom {
+      transition: transform 0.3s;
+      border: 4px solid #ccc;
+      border-radius: 15px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.58);
+    }
+
+    .zoom:hover {
+      transform: scale(1.025);
+    }
+
+    nav {
+      margin-left: 0; /* Remove left margin */
+      margin-right: 0; /* Remove right margin */
+      height: 40px;
+      background: #ad39a5;
+      /* Adjust background color */
+      color: #39c620;
+      /* Adjust text color */
+      padding: 10px 20px;
+      /* Adjust padding */
+      :hover {
+        color: rgb(219, 203, 29);
+        /* Change text color on hover */
       }
-    </style>
-  </head>
-  <body>
+    }
+    nav ul {
+      list-style: none;
+      /* Remove default bullet points */
+      margin: 0;
+      /* Remove default margin */
+      padding: 0;
+      position: relative;
+      /* Position relative for absolute positioning */
+      top: -2px;
+      /* Adjust position slightly higher */
+    }
+    ul li a {
+      margin: 0 10px;
+      text-decoration: underline;
+      color: #39c620;
+      display: flex;
+      font-weight: bold;
+      padding: 10px 20px
+    }
+  </style>
+  <!-- nav bar -->
 
-      <h1 style="text-align: center; font-family: Lato">
-        <u> TOKYO TOURISM </u>
-      </h1>
-      <!-- Scroll -->
-      <marquee behavior="scroll" direction="right">
-        WELCOME TO TOKYO TOURISM !! ☔💗
-      </marquee>
-
-      <!-- STYLING -->
-      <style>
-        .zoom {
-          transition: transform 0.3s;
-          border: 4px solid #ccc;
-          border-radius: 10px;
-          box-shadow: 0 0 6px rgba(0, 0, 0, 0.58);
-        }
-        .zoom:hover {
-          transform: scale(1.025);
-        }
-      </style>
-      <!-- nav bar -->
-
-      <nav>
-        <ul style="list-style: none; display: flex; padding: 0; margin: 0">
-          <li style="padding: 10px 20px; font-weight: bold">
-            <a href="##" style="text-decoration: underline; color: indianred"
-              >Home</a
-            >
-          </li>
-          <li style="padding: 10px 20px; font-weight: bold">
-            <a
-              href="heritage.html"
-              style="text-decoration: underline; color: indianred"
-              >Heritage</a
-            >
-          </li>
-          <li style="padding: 10px 20px; font-weight: bold">
-            <a
-              href="hotel_booking.html"
-              style="text-decoration: underline; color: indianred"
-              >Hotel Booking</a
-            >
-          </li>
-          <li style="padding: 10px 20px; font-weight: bold">
-            <a
-              href="Gallery.html"
-              style="text-decoration: underline; color: indianred"
-              >Gallery</a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <!-- City IMAGE -->
-      <img style="width: 100%" src="tokyo.jpg" alt="TOKYO" class="zoom" />
-    
-  </body>
+  <nav>
+    <ul style="display: flex">
+      <li>
+        <a href="##">Home</a>
+      </li>
+      <li>
+        <a href="heritage.html">Heritage</a>
+      </li>
+      <li>
+        <a href="hotel_booking.html">Hotel Booking</a>
+      </li>
+      <li>
+        <a href="Gallery.html">Gallery</a>
+      </li>
+      </li>
+    </ul>
+  </nav>
+  <!-- City IMAGE -->
+  <img style="width: 100%" src="tokyo.jpg" alt="TOKYO" class="zoom" />
+</body>
 </html>
