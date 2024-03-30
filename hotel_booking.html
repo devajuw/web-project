@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Form</title>
     <style>
-         input {
+        input {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
@@ -41,42 +41,41 @@
             border-radius: 12px;
         }
 
-        .div2 {
+        #div2 {
             max-width: 400px;
             margin: 5px auto;
             padding: 50px;
             background: linear-gradient(to bottom, #9e6fb0, #cb869d);
             border-radius: 10px;
-
         }
     </style>
 </head>
 
 <body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background: mistyrose;">
-        <p id="p1"></p>
+    <p id="p1"></p>
     <div class="div1">
 
-        <h1 style="text-align: center; color: #333;"><u> Hotel Booking </u> </h1>
+        <h1 style="text-align: center; color: #c71919a8;"><u> Booking Form </u> </h1>
         <h3>
             <form id="hotelForm">
 
                 <label for="guestName">Guest Name:</label>
-
                 <input type="text" id="guestName" name="guestName" placeholder="Enter Guest Name" required>
 
                 <label for="checkInDate">Check-in Date:</label>
                 <input type="date" id="checkInDate" name="checkInDate" required>
-                
+
                 <label for="checkOutDate">Check-out Date:</label>
                 <input type="date" id="checkOutDate" name="checkOutDate" required>
-                
+
                 <label for="email">E-mail Address:</label>
                 <input type="email" id="email" name="email" required placeholder="Enter email address...">
-                
+
                 <label for="phone">Phone Number: </label>
                 <input type="number" id="phone" name="phone" required placeholder="Enter phone number...">
-                <label for="sreq"> Special Requests/Comments:  </label>
-               <textarea id="sreq" name="specialRequests" rows="4" cols="50"
+
+                <label for="sreq"> Special Requests/Comments: </label>
+                <textarea id="sreq" name="specialRequests" rows="4" cols="50"
                     placeholder="Enter any special requests or comments..."></textarea>
 
                 <label for="roomType">Room Type:</label>
@@ -85,15 +84,16 @@
                     <option value="double">Double</option>
                     <option value="suite">Suite</option>
                 </select>
+            </form>
         </h3>
-        <button type="submit" onclick="show()">Submit</button>
-        </form>
+        <button type="button" onclick="show()">Submit</button>
     </div>
 
-    <div class="div2">
+    <div id="div2">
         <h3>Booking Details:</h3>
         <textarea id="bookingDetails" rows="10" cols="50" readonly></textarea>
     </div>
+
     <script>
         function show() {
             const checkInDate = document.getElementById('checkInDate').value;
@@ -103,17 +103,17 @@
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
             const sreq = document.getElementById('sreq').value;
-         let bookingDetailsTextarea = document.getElementById('bookingDetails');
-            bookingDetailsTextarea.textContent =
-                'Guest Name: ' + guestName + "<br>" +
-                'Email Address: ' + email + "<br>" +
-                'Phone Number: ' + phone + "<br>" +
-                'Check-in Date: ' + checkInDate + "<br>" +
-                'Check-out Date: ' + checkOutDate + "<br>" +
-                'Room Type: ' + roomType + "<br>" +
+
+            const bookingDetailsTextarea = document.getElementById('bookingDetails');
+            bookingDetailsTextarea.innerHTML =
+                'Guest Name: ' + guestName + "\n" +
+                'Email Address: ' + email + "\n" +
+                'Phone Number: ' + phone + "\n" +
+                'Check-in Date: ' + checkInDate + "\n" +
+                'Check-out Date: ' + checkOutDate + "\n" +
+                'Room Type: ' + roomType + "\n" +
                 'Special Requests/Comments: ' + sreq;
         }
-        
     </script>
 </body>
 
