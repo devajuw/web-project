@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meiji-jingū 💘 </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            padding-top: 60px;
+        }
+
+        .bg-image {
+            background-image: url('bgi3.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            background-size:contain;
+        }
+
+        h1 {
+            color: #485e3e;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        p {
+            line-height: 1.5;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .image-wrapper {
+            text-align: center;
+        }
+
+        #map {
+            height: 300 px;
+            /* Set the height of the map container */
+            text-align: center;
+            max-width: 100%;
+            /* Ensure full width */
+        }
+
+        nav {
+            background-color: #ff6600;
+            padding: 10px 0;
+            /* Padding for navbar links */
+            text-align: center;
+            /* Align links to the center */
+            background-image: url('japan.png');
+            /* Background image */
+            background-size: cover;
+            /* Cover the entire navbar */
+            position: fixed;
+            /* Position the navbar fixed */
+            top: 0;
+            /* Stick it to the top */
+            width: 100%;
+            /* Make it full width */
+            z-index: 999;
+            /* Cover the entire navbar */
+            position: fixed;
+            /* Position the navbar fixed */
+            top: 0;
+            /* Stick it to the top */
+            left: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            /* Remove bullet points from the list */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            /* Display links horizontally */
+            margin-right: 20px;
+            /* Space between links */
+        }
+
+        nav ul li a {
+            color: white;
+            /* Link text color */
+            text-decoration: none;
+            /* Remove underline */
+            padding: 5px 10px;
+            /* Padding for links */
+            border-radius: 5px;
+            /* Rounded corners */
+        }
+
+        nav ul li a:hover {
+            background-color: #ff9933;
+            /* Lighter orange background color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-image">
+
+
+        <nav>
+            <ul>
+                <li><a href="#map"> Google Maps</a></li>
+                <li><a href="#footer">Connect With Us</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+
+            <h1><u>Meiji-jingū: Guide to Tokyo’s Major Shinto Shrine </u></h1>
+            <p>Meiji-jingū, or Meiji Shrine, is Tokyo’s major Shinto shrine in the same manner as Sensō-ji is Tokyo’s
+                major
+                Buddhist temple. Originally established in 1920, destroyed during the war and rebuilt in 1958. It is
+                Japan’s
+                most visited religious site...</p>
+            <div class="image-wrapper">
+                <img src="https://old-tokyo.info/wp-content/uploads/2017/10/mcover-1-1140x641.jpg" alt="Meiji Shrine">
+            </div>
+            <p>On my first day in Tokyo, now many years ago, I visited Meiji-jingū and was awed by the huge torii gate
+                and
+                the forested approach towards the shrine. It felt as the true experience of Japan...</p>
+            <p>The temple grounds are divided into the inner grounds (naien) and outer grounds (gaien). The inner
+                grounds
+                have the shrine buildings, garden and treasure museum...</p>
+        </div>
+        <!--  location map -->
+        <br>
+        <br>
+
+        <div id="map">
+            <h2 style="color: maroon;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <u>Location</u>
+            </h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.632724880861!2d139.70215291560674!3d35.67639733837144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cdff8fc843f%3A0xe3ad81f294ce0df5!2sMeiji%20Shrine!5e0!3m2!1sen!2sus!4v1649338449677!5m2!1sen!2sus"
+                width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br><br><br><br><br>
+
+        <!-- Footer -->
+
+        <footer id="footer">
+            <!-- Contact Information -->
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <p>Email: info@meijishrine.com</p>
+                <p>Phone: +81-123-456-789</p>
+            </section>
+
+            <!-- Social Media Links -->
+            <section id="social-media">
+                <h2>Connect With Us</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=527668710610284&_rdr"
+                            target="_blank">Facebook</a>
+                    </li>
+                    <li><a href="https://www.twitter.com/meijishrine" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/meijishrine" target="_blank">Instagram</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Meiji_Shrine" target="_blank">Wikipedia</a></li>
+                </ul>
+            </section>
+
+            <!-- Copyright Information -->
+            <section id="copyright">
+                <p>&copy; 2024 Meiji Shrine. All rights reserved.</p>
+                <p>Disclaimer: This website is for informational purposes only. We do not guarantee the accuracy of the
+                    information provided.</p>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

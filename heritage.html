@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tourism ⛱️</title>
-    <style>
-      body {
-        background-color: mistyrose;
-      }
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meiji-jingū: Guide to Tokyo’s Major Shinto Shrine - Exploring Old Tokyo</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    h1 { color: #333; }
+    p { line-height: 1.5; }
+    img { max-width: 100%; height: auto; }
+    .content { max-width: 800px; margin: auto; }
+    .image-wrapper { text-align: center; }
+    .footer { margin-top: 20px; font-size: 0.9em; text-align: center; color: #666; }
+    .navbar { background-color: #333; overflow: hidden; }
+    .navbar a { float: left; display: block; color: navajowhite; text-align: center; padding: 14px 20px; text-decoration: none; }
+    .dropdown { float: left; overflow: hidden; }
+    .dropdown .dropbtn { border: none; outline: none; color: navajowhite; padding: 14px 20px; background-color: inherit; font-family: inherit; margin: 0; }
+    .navbar a:hover, .dropdown:hover .dropbtn { background-color: hotpink; }
+    .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+    .dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+    .dropdown-content a:hover { background-color: rgb(40, 155, 40); }
+    .dropdown:hover .dropdown-content { display: block; }
+</style>
+</head>
+<body>
 
-      /* Style for the container div */
-      .paragraph {
-        background-color: fuchsia;
-        color: white;
-        padding: 20px;
-        border-radius: 10px;
-        max-width: 600px;
-        margin: 0 auto;
-        text-align: justify;
-        font-family: Arial, sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1 style="text-align: center; font-family: Lato">
-        <u> HERITAGE OF TOKYO </u>
-      </h1>
-    </header>
-    <div class="paragraph">
-      <p id="typing"></p>
-    </div>
-    <script>
-      const text =
-        "Tokyo, Japan's vibrant capital, boasts a rich cultural heritage that seamlessly blends tradition with modernity. Steeped in history, the city is dotted with iconic landmarks such as the historic Senso-ji Temple in Asakusa and the serene Meiji Shrine nestled within bustling urban landscapes. Tokyo's culinary scene is a testament to its diverse heritage, offering a tantalizing array of traditional Japanese dishes alongside innovative culinary creations. The city's traditional arts, including tea ceremony, calligraphy, and kabuki theater, are celebrated as integral parts of its cultural identity. From the tranquil gardens of the Imperial Palace to the neon-lit streets of Shinjuku, Tokyo's heritage is a captivating fusion of ancient customs and contemporary dynamism, inviting visitors to explore its multifaceted allure. ";
+<div class="navbar">
+    <a href="#home">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Heritage Sites 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Meiji Shrine</a>
+            <a href="#">Sensō-ji Temple</a>
+            <a href="#">Tokyo Tower</a>
+            <a href="#">Ghibli Museum</a>
+            <a href="#">Imperial Palace</a>
+        </div>
+    </div> 
+</div>
 
-      // Set up typing effect
-      var index = 0;
-      var speed = 24; // Typing speed in milliseconds
 
-      function typeWriter() {
-        if (index < text.length) {
-          document.getElementById("typing").innerHTML += text.charAt(index);
-          index++;
-          setTimeout(typeWriter, speed);
-        }
-      }
 
-      // Start typing effect when the page loads
-      window.onload = function () {
-        typeWriter();
-      };
-    </script>
-  </body>
+<div class="footer">
+    Copyright &copy; old-tokyo.Info
+</div>
+
+</body>
 </html>
