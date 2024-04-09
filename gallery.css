@@ -60,3 +60,9 @@ body {
   {
     text-emphasis: circle;
   }
+  .caption {
+    display: block; /* Ensure the caption is on a new line */
+    margin-top: 8px; /* Space between the image and caption */
+    font-style: italic; /* Styling for the caption */
+    color: #555; /* Caption color */
+  }

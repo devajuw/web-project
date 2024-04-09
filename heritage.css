@@ -22,15 +22,23 @@ body {
 
 
 .fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to right, #af6ca5, #d48dae);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #af6ca5, #d48dae);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 5px; 
+}
+
+.fixed-header h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; 
+  font-size: 2rem; 
+  padding: 0; 
+  margin-bottom: -7px;
 }
 
 .home-button {
@@ -43,21 +51,13 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.fixed-header h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center; 
-    flex-grow: 1;
-    margin: auto;
-    text-align: justify;
-    padding-top: 30px;
-}
-
 .heritage-sites-list {
-    max-width: 800px;
     margin: 0 auto;
+    text-align: left;
   }
   
   .heritage-site-item {
+    text-align: left;
     margin-bottom: 30px;
   }
   
@@ -82,4 +82,8 @@ body {
   .heritage-site-item a:hover {
     background-color: #8e114b; 
   }
-  
+  .content p{
+    text-align: justify;
+    font-weight: bolder;
+    
+  }
