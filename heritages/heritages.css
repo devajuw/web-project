@@ -1,0 +1,110 @@
+
+@font-face {
+    font-family: 'japanese';
+    src: url(Kyoto.ttf) format('truetype');
+}
+
+h1,h2,
+h3,
+h4 {
+    font-family: 'japanese', sans-serif;
+    text-decoration: underline;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    text-align: center;
+    color: maroon;
+  
+}
+
+h1 {
+    color: #485e3e;
+   
+}
+
+p {
+    line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content,
+#location {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: justify;
+
+}
+
+.image-wrapper {
+    text-align: center;
+}
+
+
+
+nav {
+    background-color: #ff6600;
+    padding: 10px 0;
+    text-align: center;
+    background-image: url('japan.png');
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    color: rgb(119, 59, 59);
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+nav ul li a:hover {
+    background-color: #ff9933;
+   
+}
+
+.bg-image {
+    background-image: url('tokyo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#footer {
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px;
+}
