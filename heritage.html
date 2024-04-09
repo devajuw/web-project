@@ -1,51 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meiji-jingū: Guide to Tokyo’s Major Shinto Shrine - Exploring Old Tokyo</title>
-<style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    h1 { color: #333; }
-    p { line-height: 1.5; }
-    img { max-width: 100%; height: auto; }
-    .content { max-width: 800px; margin: auto; }
-    .image-wrapper { text-align: center; }
-    .footer { margin-top: 20px; font-size: 0.9em; text-align: center; color: #666; }
-    .navbar { background-color: #333; overflow: hidden; }
-    .navbar a { float: left; display: block; color: navajowhite; text-align: center; padding: 14px 20px; text-decoration: none; }
-    .dropdown { float: left; overflow: hidden; }
-    .dropdown .dropbtn { border: none; outline: none; color: navajowhite; padding: 14px 20px; background-color: inherit; font-family: inherit; margin: 0; }
-    .navbar a:hover, .dropdown:hover .dropbtn { background-color: hotpink; }
-    .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
-    .dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
-    .dropdown-content a:hover { background-color: rgb(40, 155, 40); }
-    .dropdown:hover .dropdown-content { display: block; }
-</style>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap">
+    <meta charset="UTF-8">
+    <title>Heritage Sites Of Tokyo</title>
+    <link rel="stylesheet" href="heritage.css">
+
 <body>
+<!-- Fixed header container -->
+<div class="fixed-header">
+    <a href="/" class="home-button">Home</a>
+    <h1>Welcome to Tokyo's Heritage Sites</h1>
+</div>
+    <div class="content">
+        <h2>Overview</h2>
+        <p>
+            <strong>Tokyo</strong>, a city where the past and future converge, is home to some of Japan's most iconic heritage sites.
+            From the serene Meiji Shrine to the historic Sensō-ji Temple and the majestic Imperial Palace, each site
+            offers a unique window into the rich tapestry of Japanese history and culture.
+        </p>
 
-<div class="navbar">
-    <a href="#home">Home</a>
-    <div class="dropdown">
-        <button class="dropbtn">Heritage Sites 
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="heritages/Meiji.html">Meiji Shrine</a>
-            <a href="#">Sensō-ji Temple</a>
-            <a href="#">Tokyo Tower</a>
-            <a href="#">Ghibli Museum</a>
-            <a href="#">Imperial Palace</a>
-        </div>
+        <h2>Cultural Significance</h2>
+        <p>
+            Tokyo's heritage culture is a vibrant tapestry that interweaves the past and present in a seamless narrative
+            that captures the spirit of Japan. At its core, Tokyo's traditional practices and historical sites stand as
+            a testament to the city's resilience and commitment to preserving its rich history. From the serene grounds
+            of the Meiji Shrine to the ancient paths leading to Sensō-ji Temple, each site is a doorway to understanding
+            the complex, layered identity of Tokyo.
+        </p>
+        <p>
+            These landmarks are not merely relics to be admired; they are active centers of cultural significance. They
+            host festivals that burst with color and life, bringing together communities to celebrate seasons and
+            traditions unchanged by time. The meticulously preserved buildings and gardens offer a silent narrative of
+            the city's transformation from a feudal society to a leading global metropolis. In Tokyo, heritage culture
+            is not just about preservation—it's about living history that continues to influence and inspire the rhythms
+            of daily life in this dynamic city.
+        </p>
+       
+        <div class="heritage-sites-list">
+            <h2>City Heritage Sites</h2>
+            <p style="color: rgb(123, 41, 100);">
+                Mentioned below is the list of popular important heritage sites of Tokyo . <br> <strong>Click on the image </strong>to know more about the respective Site
+            </p>
+            <!-- Heritage Site 1 -->
+            <div class="heritage-site-item">
+                <h1>Meiji Shrine  (明治神宮, Meiji Jingū)</h1>
+                <a href="heritages/Meiji.html">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Meiji_Jingu_2023-3.jpg/2560px-Meiji_Jingu_2023-3.jpg" alt="Heritage Site 1 Thumbnail" class="heritage-thumbnail"></a>
+              <p> Dedicated to Emperor Meiji and his wife, this Shinto shrine is known for its peaceful environment and forested path leading to the main complex.</p>
+            </div>
+
+            
+            <div class="heritage-site-item">
+                <h1>Ghibli Museum (ジブリ美術館, Jiburi Bijutsukan)</h1>
+                <a href="heritages/ghibli.html">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ghibli_Museum%2C_Mitaka_-_panoramio.jpg/1920px-Ghibli_Museum%2C_Mitaka_-_panoramio.jpg" alt="Heritage Site 1 Thumbnail" class="heritage-thumbnail"></a>
+              <p> It is a museum showcasing the work of the Japanese animation studio Studio Ghibli. It is located in Inokashira Park in Mitaka, a western city of Tokyo, Japan. The museum combines features of a children's museum, technology museum, and a fine arts museum, and is dedicated to the art and technique of animation. </p>
+            </div>
+
+            <div class="heritage-site-item">
+                <h1>Imperial Palace Kōkyo (皇居)</h1>
+                <a href="heritages/Imperial.html">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Seimon_Ishibashi.JPG/1920px-Seimon_Ishibashi.JPG" alt="imperial palace" class="heritage-thumbnail"></a>
+              <p> The Imperial Palace (皇居, Kōkyo, literally 'Imperial Residence') is the main residence of the Emperor of Japan. It is a large park-like area located in the Chiyoda district of the Chiyoda ward of Tokyo and contains several buildings including the Fukiage Palace (吹上御所, Fukiage gosho) where the Emperor has his living quarters, the main palace (宮殿, Kyūden) where various ceremonies and receptions take place, some residences of the Imperial Family, an archive, museums and administrative offices.</p>
+            </div>
+
+            <div class="heritage-site-item">
+                <h1>Akasaka Palace ( Akasaka Rikyū, 赤坂離宮 )</h1>
+                <a href="heritages/Meiji.html">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/2019_Akasaka_Palace_02.jpg/1920px-2019_Akasaka_Palace_02.jpg" alt="Akasaka Palace" class="heritage-thumbnail"></a>
+              <p> Akasaka Palace (赤坂離宮, Akasaka Rikyū) is a state guest house (迎賓館, geihinkan) of the government of Japan. Other state guesthouses include the Kyoto State Guest House and the Osaka State Guest House.
+                Located in the Moto-Akasaka, Minato, Tokyo, the building took on its present function in 1974, having previously been an imperial detached palace. In 2009 the palace was designated as a National Treasure of Japan.[1]
+              </p>
+            </div>
+
+            <div class="heritage-site-item">
+                <h1>Tokyo Tower (東京タワー, Tōkyō-tawā)</h1>
+                <a href="heritages/Tokyo-Tower.html">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tokyo_Tower_2023.jpg/405px-Tokyo_Tower_2023.jpg" alt="Tokyo Tower" class="heritage-thumbnail"></a>
+              <p> The Tokyo Tower ( Tōkyō tawā, pronounced [toːkʲoː taɰᵝaː] ⓘ, officially called 日本電波塔, Nippon denpatō, "Japan Radio Tower") is a communications and observation tower in the Shiba-koen district of Minato, Tokyo, Japan, built in 1958. At 332.9 meters (1,092 ft), it is the second-tallest tower in Japan ever since the Tokyo Skytree was constructed which is the tallest tower in Japan at the moment (constructed in 2012). The structure is an Eiffel Tower-inspired lattice tower that is painted white and international orange to comply with air safety regulations.</p>
+            </div>
+
+            <div class="heritage-site-item">
+                <h1>Asakusa and Sensoji Temple  (浅草と浅草寺)</h1>
+                <a href="heritages/skytree.html">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/1920px-Sensoji_2023.jpg" alt="heritage-thumbnail" class="heritage-thumbnail"></a>
+              <p> Sensō-ji ([sẽ̞ꜜɰ̃so̞ːʑi] ⓘ, 浅草寺, officially Kinryū-zan Sensō-ji (金龍山浅草寺), also known as Asakusa Kannon (浅草観音)), is an ancient Buddhist temple located in Asakusa, Tokyo, Japan. It is Tokyo's oldest temple, and one of its most significant. Formerly associated with the Tendai sect of Buddhism, it became independent after World War II.</p>
+            </div>
+
+            <div class="heritage-site-item">
+                <h1>Tokyo Skytree (Tōkyō Sukurai Tsūrī, 東京スカイツリー)</h1>
+                <a href="heritages/skytree.html">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/375px-Tokyo_Skytree_2023.jpg" alt="heritage-thumbnail" class="heritage-thumbnail"></a>
+              <p> Tokyo Skytree (東京スカイツリー, Tōkyō Sukaitsurī, [toːkʲoː sɯ̥kaitsɯriː] ⓘ) is a broadcasting and observation tower in Sumida, Tokyo. It became the tallest tower in Japan in 2010[2] and reached its full height of 634 meters (2,080 ft) in March 2011, making it the tallest tower in the world, displacing the Canton Tower,[3][4] and the third tallest structure in the world after Merdeka 118 (678.9 m or 2,227 ft) and the Burj Khalifa (829.8 m or 2,722 ft).[5][a] It is the tallest freestanding tower in the OECD, the G20 and G7 countries.</p>
+            </div>
+
+            <div class="heritage-site-item">
+                <h1>Tōkyō Kokuritsu Hakubutsukan (東京国立博物館)</h1>
+                <a href="heritages/Meiji.html">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/375px-Tokyo_National_Museum%2C_Honkan_2010.jpg" alt="Heritage Site 1 Thumbnail" class="heritage-thumbnail"></a>
+              <p> The Tokyo National Museum (東京国立博物館, Tōkyō Kokuritsu Hakubutsukan) or TNM is an art museum in Ueno Park in the Taitō ward of Tokyo, Japan. It is one of the four museums[a] operated by the National Institutes for Cultural Heritage (ja:国立文化財機構), is considered the oldest national museum in Japan, is the largest art museum in Japan. The museum collects, preserves, and displays a comprehensive collection of artwork and cultural objects from Asia, with a focus on ancient and medieval Japanese art and Asian art along the Silk Road.</p>
+            </div>
+
+            <div class="heritage-site-item">
+                <h1>Hie Shrine (日枝神社, Hie-jinja): </h1>
+                <a href="heritages/Meiji.html">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Tokyo_Hie-Shrine_Gate.jpg/330px-Tokyo_Hie-Shrine_Gate.jpg" alt="Heritage Site 1 Thumbnail" class="heritage-thumbnail"></a>
+              <p> Nestled at the top of a hill in the bustling district of Chiyoda, Hie Shrine offers stunning panoramic views of the city. Dedicated to the deities of mountains and fire, the shrine boasts a long history dating back to the 14th century. Its serene atmosphere and traditional architecture provide a welcome respite from the urban environment. </p>
+            </div>
+
+            <div class="heritage-site-item">
+                <h1>Hama Rikyu Gardens (浜離宮庭園, Hama-rikyu Teien)</h1>
+                <a href="heritages/Meiji.html">
+              <img src="https://www.japan-guide.com/g18/3025_02.jpg" alt="Heritage Site 1 Thumbnail" class="heritage-thumbnail"></a>
+              <p> Escape the crowds and find tranquility at Hama Rikyu Gardens, a beautiful landscape garden located on the shores of Tokyo Bay. Originally a feudal lord's residence, the gardens showcase traditional Japanese landscaping techniques, with ponds, bridges, and carefully arranged plants creating a harmonious environment. </p>
+            </div>
+
+
+           
+            
+            <!-- heritage sites list div -->
+          </div>
+          
+<!-- content div -->
     </div> 
-</div>
-
-
-
-<div class="footer">
-    Copyright &copy; old-tokyo.Info
-</div>
-
 </body>
 </html>
