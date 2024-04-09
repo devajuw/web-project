@@ -45,46 +45,41 @@ body {
 
 .fixed-header h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center; /* Align to the left to make room for the home button */
-    flex-grow: 1; /* Allows the h1 to fill the space in the flex container */
-    margin: 0; /* Remove margin to reduce space */
-}
-
-.content {
-    max-width: 800px;
+    text-align: center; 
+    flex-grow: 1;
     margin: auto;
     text-align: justify;
     padding-top: 30px;
 }
-/* heritage sites list */
+
 .heritage-sites-list {
     max-width: 800px;
     margin: 0 auto;
   }
   
   .heritage-site-item {
-    margin-bottom: 30px; /* Spacing between items */
+    margin-bottom: 30px;
   }
   
   .heritage-thumbnail {
-    width: 100%; /* Responsive image width */
-    max-width: 200px; /* Maximum size of thumbnails */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Spacing between image and text */
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+    margin-bottom: 10px;
   }
   
   .heritage-site-item h1 {
     text-decoration: underline;
-    margin: 10px 0; /* Spacing around the site name */
+    margin: 10px 0; 
     color: #b55d47;
   }
   
   .heritage-site-item p {
-    margin-bottom: 10px; /* Spacing between description and link */
+    margin-bottom: 10px; 
   }
 
   
   .heritage-site-item a:hover {
-    background-color: #8e114b; /* Background color on hover */
+    background-color: #8e114b; 
   }
   
