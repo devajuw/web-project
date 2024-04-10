@@ -39,6 +39,7 @@
       padding: 10px 50px;
       text-decoration: none;
       font-weight: bold;
+      padding-top: 140px;
     }
 
     .navbar ul li a:hover {
@@ -48,7 +49,7 @@
 
     .content {
       padding: 60px 20px 20px;
-      /* Adjust top padding to not hide content behind the navbar */
+
       font-size: large;
     }
 
@@ -58,45 +59,54 @@
       justify-content: space-between;
       margin: 20px auto;
       max-width: 1200px;
-      /* Adjust based on your preference */
       gap: 20px;
-      /* Adds space between the two sections */
+
     }
 
     .intro-section,
     .tokyo-location-section {
       flex: 1;
-      /* Each section takes equal width */
+      margin-left: 2cm;
+      margin-right: 2cm;
       padding: 40px 20px;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       color: #333;
       line-height: 1.6;
     }
+
     .intro-section h1 {
       text-align: center;
-      /* Center the heading */
+
       color: #b37cb1;
-      /* Theme color for the heading */
+
       margin-bottom: 24px;
-      /* Space between heading and paragraph */
+
       font-size: 2em;
-      /* Larger font size for the heading */
+
+    }
+
+    .intro-logo {
+      position: fixed;
+      left: 0.2%;
+      top: 0.2%;
+      width: 5vw;
     }
 
     .intro-section p {
       text-align: justify;
-      /* Justified text for clean edges */
+
       font-size: 1.1em;
-      /* Slightly larger font size for readability */
+
       margin-bottom: 9px;
-      /* Space between paragraphs */
+
     }
   </style>
 </head>
 
 <body>
   <nav class="navbar">
+    <img class="intro-logo" src="tokyo logo.webp" alt="Tokyo Tourism Logo" />
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="heritage.html">Heritage</a></li>
@@ -104,7 +114,7 @@
       <li><a href="Gallery.html">Gallery</a></li>
     </ul>
   </nav>
-  <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+  <div class="tokyo pic" style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
 ">
     <iframe loading="lazy"
@@ -118,7 +128,8 @@
   <div class="intro-section">
     <h1 style="text-align: center;"><u>TOKYO</u></h1>
     <p class="introduction">
-      <strong> Welcome to Tokyo! </strong>
+
+      <strong> Welcome to Tokyo Tourism! </strong>
       <br>
       Dive into the heart of Tokyo, a city where the ultramodern and the traditional are woven seamlessly together. From
       towering skyscrapers that light up the night sky to tranquil temples that have stood the test of time, Tokyo
@@ -136,8 +147,8 @@
       Join us as we unravel the tapestry of Tokyo, a city that dreams as big as it lives. Welcome to where the future
       meets tradition, and every street corner tells a story. Welcome to Tokyo – where every visit is a discovery.
     </p>
-  </div>
 
+  </div>
   <!-- Tokyo location -->
   <div class="tokyo-location-section">
     <h1 style="text-align: center;"><u>LOCATION OF TOKYO</u></h1>
@@ -152,7 +163,9 @@
       with futuristic innovations, making Tokyo a symbol of Japan's resilience and its embrace of the new. Its
       geographical placement not only drives Japan's economy but also serves as a focal point for travel, inviting
       millions to explore its dynamic blend of heritage and progress.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Tokyo_in_Japan.svg/1280px-Tokyo_in_Japan.svg.png" alt="Map showing Tokyo's location within Japan" style="width: 300px; ">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Tokyo_in_Japan.svg/1280px-Tokyo_in_Japan.svg.png"
+      alt="Map showing Tokyo's location within Japan" style="width: 700px;margin:auto;display: block; ">
   </div>
 
 </body>
