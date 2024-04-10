@@ -6,33 +6,40 @@ body {
   }
   
   nav {
-    background-image: linear-gradient();
-    padding: 10px ;
+    background: linear-gradient(to right, #9d6b6b, #8a6043);
+    padding: 10px;
     text-align: center;
-    
+    color: #8a6043;
   }
   
   nav ul {
-    list-style: none;
+    list-style: none; 
     padding: 0;
     margin: 0;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
   }
   
   nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 5px; 
   }
   
-  nav ul li a {
-    color: rgb(255, 255, 255);
+  nav a {
+    color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-   
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
   }
-  nav ul li a:hover{
-    background-color: #73b1b0;
+  
+  nav a:hover {
+    background-color: #ffffff;
+    color: #9d6b6b;
+    cursor: pointer;
   }
+  
 
   .section {
     padding: 20px;
@@ -60,9 +67,4 @@ body {
   {
     text-emphasis: circle;
   }
-  .caption {
-    display: block; /* Ensure the caption is on a new line */
-    margin-top: 8px; /* Space between the image and caption */
-    font-style: italic; /* Styling for the caption */
-    color: #555; /* Caption color */
-  }
+ 
