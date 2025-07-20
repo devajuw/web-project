@@ -88,6 +88,138 @@ nav a:hover {
             background: linear-gradient(to bottom, #9e6fb0, #cb869d);
             border-radius: 10px;
         }
+
+        /* Tablet Responsive */
+        @media screen and (max-width: 768px) {
+            nav {
+                padding: 10px 5px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+            
+            nav ul li {
+                margin: 0;
+                width: auto;
+                max-width: 160px;
+            }
+            
+            nav a {
+                display: block;
+                padding: 10px 16px;
+                text-align: center;
+                width: auto;
+                min-width: 140px;
+                box-sizing: border-box;
+            }
+            
+            .div1 {
+                max-width: 90%;
+                margin: 30px auto;
+                padding: 30px 20px;
+            }
+            
+            #div2 {
+                max-width: 90%;
+                margin: 20px auto;
+                padding: 30px 20px;
+            }
+            
+            input, button, select, textarea {
+                font-size: 16px;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 0 10px;
+            }
+            
+            nav {
+                padding: 8px 5px;
+            }
+            
+            nav ul {
+                gap: 6px;
+            }
+            
+            nav ul li {
+                max-width: 120px;
+            }
+            
+            nav a {
+                padding: 8px 12px;
+                font-size: 14px;
+                min-width: 100px;
+            }
+            
+            .div1 {
+                max-width: 100%;
+                margin: 20px auto;
+                padding: 20px 15px;
+            }
+            
+            #div2 {
+                max-width: 100%;
+                margin: 15px auto;
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 1.5rem !important;
+            }
+            
+            input, select {
+                padding: 12px;
+                font-size: 16px;
+            }
+            
+            button {
+                padding: 15px;
+                font-size: 16px;
+            }
+            
+            textarea {
+                padding: 12px;
+                font-size: 16px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            
+            #bookingDetails {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        /* Small Mobile */
+        @media screen and (max-width: 320px) {
+            .div1, #div2 {
+                padding: 15px 10px;
+            }
+            
+            h1 {
+                font-size: 1.3rem !important;
+            }
+            
+            nav ul {
+                gap: 4px;
+            }
+            
+            nav ul li {
+                max-width: 100px;
+            }
+            
+            nav a {
+                padding: 6px 10px;
+                font-size: 13px;
+                min-width: 80px;
+            }
+        }
     </style>
 </head>
 <nav class="nav">
