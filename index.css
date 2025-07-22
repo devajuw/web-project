@@ -1,0 +1,252 @@
+/* Base Styles */
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: mistyrose;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #bdb2d3, #5595df);
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 50px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: rgb(255, 255, 255);
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #d6ac51;
+  border-radius: 5px;
+}
+
+/* Content */
+.content {
+  padding: 50px 20px 20px;
+  font-size: large;
+}
+
+/* Tokyo pic iframe container */
+.tokyo.pic {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.2225%;
+  padding-bottom: 0;
+  box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+  margin-top: 50px;
+  margin-bottom: 0.9em;
+  overflow: hidden;
+}
+
+.tokyo.pic iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sections */
+.sections-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 1200px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.intro-section,
+.tokyo-location-section {
+  flex: 1;
+  min-width: 300px;
+  margin: 0 2rem;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+  line-height: 1.6;
+}
+
+.intro-section h1,
+.tokyo-location-section h1 {
+  text-align: center;
+  color: #b37cb1;
+  margin-bottom: 24px;
+  font-size: 2em;
+}
+
+.intro-section p,
+.tokyo-location-section p {
+  text-align: justify;
+  font-size: 1.1em;
+  margin-bottom: 9px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* Mobile First - Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    min-height: 50px;
+  }
+  
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  
+  .navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .navbar ul li a {
+    padding: 10px 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .content {
+    padding: 200px 10px 20px;
+    font-size: medium;
+  }
+  
+  .tokyo.pic {
+    margin-top: 200px;
+  }
+
+  .sections-container {
+    flex-direction: column;
+    margin: 10px;
+    gap: 15px;
+  }
+
+  .intro-section,
+  .tokyo-location-section {
+    margin: 0;
+    padding: 20px 15px;
+  }
+
+  .intro-section h1,
+  .tokyo-location-section h1 {
+    font-size: 1.5em;
+  }
+
+  .intro-section p,
+  .tokyo-location-section p {
+    font-size: 1em;
+  }
+
+  .tokyo.pic {
+    margin: 1em 0.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: auto;
+    min-height: 50px;
+  }
+  
+  .navbar ul li a {
+    padding: 8px 6px;
+    font-size: 0.9em;
+  }
+  
+  .content {
+    padding: 180px 5px 15px;
+  }
+  
+  .tokyo.pic {
+    margin-top: 180px;
+  }
+
+  .intro-section,
+  .tokyo-location-section {
+    padding: 15px 10px;
+  }
+
+  .intro-section h1,
+  .tokyo-location-section h1 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+
+  .intro-section p,
+  .tokyo-location-section p {
+    font-size: 0.95em;
+    text-align: left;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar ul li a {
+    padding: 8px 25px;
+  }
+
+  .sections-container {
+    max-width: 900px;
+    gap: 15px;
+  }
+
+  .intro-section,
+  .tokyo-location-section {
+    margin: 0 1rem;
+    padding: 30px 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navbar ul li a {
+    padding: 8px 40px;
+  }
+
+  .sections-container {
+    max-width: 1200px;
+  }
+
+  .intro-section,
+  .tokyo-location-section {
+    margin-left: 2cm;
+    margin-right: 2cm;
+  }
+}
