@@ -5,7 +5,6 @@
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -34,9 +33,24 @@ img {
     height: auto;
 }
 
+/* Responsive iframe for maps */
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent horizontal scrolling */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
 .content, #location {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 70px auto 0;
     padding: 50px;
     text-align: justify;
 }
@@ -63,12 +77,17 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 nav ul li {
     color: rgb(119, 59, 59);
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin: 0 5px;
+    flex-shrink: 0;
 }
 
 nav ul li a {
@@ -78,6 +97,9 @@ nav ul li a {
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    white-space: nowrap;
+    display: inline-block;
+    min-height: 20px;
 }
 
 nav ul li a:hover {
@@ -90,6 +112,11 @@ nav ul li a:hover {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    padding-top: 70px;
+}
+
+.bg-image .content:first-of-type, .bg-image #location:first-of-type {
+    margin-top: 0;
 }
 
 #footer {
@@ -101,24 +128,22 @@ nav ul li a:hover {
 @media screen and (max-width: 768px) {
     .content, #location {
         padding: 30px 20px;
-        margin-top: 60px;
+        margin-top: 50px;
     }
     
     nav {
-        padding: 8px 0;
+        padding: 8px 5px;
     }
     
     nav ul li {
-        display: block;
-        margin: 5px 0;
+        display: inline-block;
+        margin: 0 2px;
     }
     
     nav ul li a {
-        display: block;
-        padding: 8px 15px;
-        margin: 2px auto;
-        width: 200px;
-        text-align: center;
+        padding: 6px 8px;
+        font-size: 12px;
+        white-space: nowrap;
     }
     
     h1 {
@@ -131,6 +156,14 @@ nav ul li a:hover {
     
     .bg-image {
         background-attachment: scroll;
+        padding-top: 50px;
+    }
+    
+    /* Make iframe responsive */
+    iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 250px !important;
     }
     
     #footer {
@@ -142,17 +175,23 @@ nav ul li a:hover {
 @media screen and (max-width: 480px) {
     .content, #location {
         padding: 20px 15px;
-        margin-top: 80px;
+        margin-top: 50px;
     }
     
     nav {
-        padding: 5px 0;
+        padding: 5px 1px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: 0;
+        flex-shrink: 0;
     }
     
     nav ul li a {
-        padding: 6px 12px;
-        width: 180px;
-        font-size: 14px;
+        padding: 4px 3px;
+        font-size: 9px;
+        white-space: nowrap;
     }
     
     h1 {
@@ -168,6 +207,17 @@ nav ul li a:hover {
         line-height: 1.4;
     }
     
+    .bg-image {
+        padding-top: 50px;
+    }
+    
+    /* Make iframe responsive */
+    iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 200px !important;
+    }
+    
     #footer {
         padding: 10px 5px;
         font-size: 12px;
@@ -177,12 +227,23 @@ nav ul li a:hover {
 @media screen and (max-width: 320px) {
     .content, #location {
         padding: 15px 10px;
+        margin-top: 45px;
+    }
+    
+    nav {
+        padding: 3px 1px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: 0;
+        flex-shrink: 0;
     }
     
     nav ul li a {
-        width: 160px;
-        font-size: 12px;
-        padding: 5px 10px;
+        padding: 3px 2px;
+        font-size: 8px;
+        white-space: nowrap;
     }
     
     h1 {
@@ -195,5 +256,37 @@ nav ul li a:hover {
     
     p {
         font-size: 12px;
+    }
+    
+    .bg-image {
+        padding-top: 45px;
+    }
+    
+    /* Make iframe responsive */
+    iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 180px !important;
+    }
+}
+
+/* Ultra small screens */
+@media screen and (max-width: 280px) {
+    nav {
+        padding: 2px 0;
+    }
+    
+    nav ul li {
+        margin: 0;
+    }
+    
+    nav ul li a {
+        padding: 2px 1px;
+        font-size: 7px;
+        white-space: nowrap;
+    }
+    
+    .bg-image {
+        padding-top: 40px;
     }
 }
